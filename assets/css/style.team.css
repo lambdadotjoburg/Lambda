@@ -1,0 +1,128 @@
+:root {
+  --clr-primary: #828485d8;
+  --clr-gray: #757575;
+  --clr-gray-light: #b0bec5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--clr-gray);
+  margin: 2rem;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+}
+
+.container {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+  background-color: white;
+  text-align: center;
+  /* border-radius: 1rem; */
+  position: relative;
+  margin: 0.5rem;
+}
+
+.banner-img {
+  position: absolute;
+  background-image: linear-gradient(rgb(22, 22, 22), rgb(202, 199, 199));
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: stretch;
+}
+
+.profile-img {
+  width: 8rem;
+  height: 8rem;
+  clip-path: circle(60px at center);
+  margin-top: 4.5rem;
+  
+  position: relative;
+
+  transition: transform .2s; /* Animation */
+}
+
+.profile-img:hover {
+  transform: scale(1.2);
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+.description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+  margin: 10px;
+  height: 5rem;
+}
+
+.btn {
+  width: 80%;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  background-color: var(--clr-primary);
+
+  position: relative;
+  bottom: 0px;
+}
+
+.btn:hover {
+  background-color: #757575;
+}
+
+.btn:active {
+  background-color: #bbbbbb;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.name input {
+  width: 75%;
+}
+
+.description textarea {
+  width: 70%;
+  height: 80%;
+}
+
+.picture img {
+  width: 8rem;
+  height: 8rem;
+  clip-path: circle(60px at center);
+  margin-top: 4.5rem;
+  
+  position: relative;
+
+  transition: transform .2s; /* Animation */
+}
+
+.picture img:hover {
+  transform: scale(1.2);
+}
+
+.picture {
+  display: none;
+}
